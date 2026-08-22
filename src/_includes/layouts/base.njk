@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title %}{{ title }} | {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description | default(site.description) }}">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="{{ '/' | url }}" class="site-logo">
+        <span class="site-logo-icon">✝</span>
+        <span class="site-logo-text">{{ site.name }}</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="{{ '/articles/' | url }}" {% if '/articles/' in page.url %}aria-current="page"{% endif %}>Статьи</a></li>
+          <li><a href="{{ '/videos/' | url }}" {% if '/videos/' in page.url %}aria-current="page"{% endif %}>Видео</a></li>
+          <li><a href="{{ '/about/' | url }}" {% if '/about/' in page.url %}aria-current="page"{% endif %}>Про нас</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content | safe }}
+  </main>
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "family4",
+  "version": "1.0.0",
+  "description": "FamilyWord.org - Слово для семьи",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "eleventy",
+    "serve": "eleventy --serve --port=9000"
+  },
+  "keywords": [
+    "christian",
+    "family"
+  ],
+  "author": "Slavik",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

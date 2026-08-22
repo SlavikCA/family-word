@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+---
+<div class="content-page">
+  <article>
+    <header>
+      <p class="video-meta">
+        <span>{{ category }}</span> · <time datetime="{{ date | date('YYYY-MM-DD') }}">{{ date | date('MMMM D, YYYY') }}</time> · {{ duration }}
+      </p>
+      <h1>{{ title }}</h1>
+    </header>
+
+    {% if videoId %}
+    <div class="video-embed">
+      <iframe src="https://www.youtube.com/embed/{{ videoId }}" title="{{ title }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    {% else %}
+    <div class="video-embed">
+      <div class="video-placeholder">
+        🎬 <br>
+        Video placeholder — add a YouTube ID to embed your video
+      </div>
+    </div>
+    {% endif %}
+
+    {% if description %}
+    <div class="video-description">
+      {{ description | safe }}
+    </div>
+    {% endif %}
+
+    <nav class="back-link" style="margin-top: var(--space-xl);">
+      <a href="{{ '/videos/' | url }}">← Back to all videos</a>
+    </nav>
+  </article>
+</div>

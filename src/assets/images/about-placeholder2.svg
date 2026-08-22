@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c9a8a"/>
+      <stop offset="100%" style="stop-color:#3d2b1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity="0.3">
+    <circle cx="200" cy="150" r="80" fill="#c9a86a"/>
+    <circle cx="600" cy="450" r="100" fill="#c9a86a"/>
+  </g>
+  <!-- Generic team/people silhouette -->
+  <g fill="#e8d9b7" opacity="0.7">
+    <!-- Person 1 -->
+    <circle cx="300" cy="240" r="35" />
+    <path d="M270 280 Q300 255 330 280 L340 420 L300 420 L260 420 Z" />
+    <!-- Person 2 -->
+    <circle cx="430" cy="240" r="35" />
+    <path d="M400 280 Q430 255 460 280 L470 420 L430 420 L390 420 Z" />
+    <!-- Person 3 -->
+    <circle cx="560" cy="240" r="35" />
+    <path d="M530 280 Q560 255 590 280 L600 420 L560 420 L520 420 Z" />
+  </g>
+  <text x="400" y="550" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle">Team Placeholder</text>
+</svg>

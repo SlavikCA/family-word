@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6b4f2e"/>
+      <stop offset="100%" style="stop-color:#3d2b1f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g opacity="0.3">
+    <circle cx="150" cy="150" r="80" fill="#c9a86a"/>
+    <circle cx="650" cy="450" r="100" fill="#c9a86a"/>
+  </g>
+  <!-- Generic family silhouette -->
+  <g fill="#e8d9b7" opacity="0.7">
+    <!-- Parent 1 -->
+    <circle cx="330" cy="270" r="35" />
+    <path d="M310 310 Q330 280 350 310 L370 420 L330 420 L310 420 Z" />
+    <!-- Parent 2 -->
+    <circle cx="470" cy="270" r="35" />
+    <path d="M450 310 Q470 280 490 310 L510 420 L470 420 L450 420 Z" />
+    <!-- Child 1 -->
+    <circle cx="375" cy="400" r="20" />
+    <path d="M360 425 Q375 405 390 425 L405 500 L375 500 L360 500 Z" />
+    <!-- Child 2 -->
+    <circle cx="425" cy="400" r="20" />
+    <path d="M410 425 Q425 405 440 425 L455 500 L425 500 L410 500 Z" />
+  </g>
+  <text x="400" y="550" font-family="Georgia, serif" font-size="24" fill="#ffffff" text-anchor="middle">Community Placeholder</text>
+</svg>

@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+<div class="content-page">
+  <article>
+    <header>
+      <p class="article-meta">
+        <time datetime="{{ date | date('YYYY-MM-DD') }}">{{ date | date('MMMM D, YYYY') }}</time>
+        {% if category %} · {{ category }}{% endif %}
+      </p>
+      <h1>{{ title }}</h1>
+    </header>
+
+    {% if image %}
+    <img src="{{ image }}" alt="{% if imageAlt %}{{ imageAlt }}{% else %}{{ title }}{% endif %}" class="article-featured-image" style="width:100%; border-radius: var(--border-radius); margin-bottom: var(--space-lg);">
+    {% endif %}
+
+    <div class="article-body">
+      {{ content | safe }}
+    </div>
+
+    <nav class="back-link" style="margin-top: var(--space-xl);">
+      <a href="{{ '/articles/' | url }}">← Back to all articles</a>
+    </nav>
+  </article>
+</div>

@@ -23,11 +23,9 @@ layout: layouts/base.njk
     </div>
     {% endif %}
 
-    {% if description %}
     <div class="video-description">
-      {{ description | safe }}
+      {{ content | safe }}
     </div>
-    {% endif %}
 
     <nav class="back-link" style="margin-top: var(--space-xl);">
       <a href="{{ '/videos/' | url }}">← Back to all videos</a>

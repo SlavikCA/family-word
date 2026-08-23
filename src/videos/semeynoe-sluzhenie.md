@@ -2,8 +2,7 @@
 layout: layouts/video.njk
 title: Семейное Служение
 date: 2026-08-22
-category: Sermon
-duration: "42:00"
+category: ОБЩЕНИЕ
 excerpt: "Семейное служение — как Бог призывает семьи служить Ему и друг другу."
 image: /assets/images/video-placeholder.svg
 videoId: p0n976_urAI

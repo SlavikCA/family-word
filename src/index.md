@@ -20,9 +20,11 @@ description: Building strong Christian homes through articles and videos
     {% set recentPosts = collections.article | reverse | take(3) %}
     {% for post in recentPosts %}
     <article class="card">
+      {% if post.data.image  %}
       <div class="card-image">
-        <img src="{{ post.data.image | default('/assets/images/article-placeholder.svg') }}" alt="{{ post.data.title }}" loading="lazy">
+        <img src="{{ post.data.image }}" alt="{{ post.data.title }}" loading="lazy">
       </div>
+      {% endif %}
       <div class="card-content">
         <p class="card-meta">{{ post.data.category }} · {{ post.date | date('MMMM D, YYYY') }}</p>
         <h3 class="card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
@@ -57,5 +59,3 @@ description: Building strong Christian homes through articles and videos
     {% endfor %}
   </div>
 </section>
-
-

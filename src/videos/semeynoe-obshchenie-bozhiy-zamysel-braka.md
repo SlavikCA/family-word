@@ -2,8 +2,7 @@
 layout: layouts/video.njk
 title: Семейное Общение | Божий Замысел Брака
 date: 2026-08-22
-category: Sermon
-duration: "38:42"
+category: ОБЩЕНИЕ
 excerpt: "Семейное общение — Божий замысел брака. Узнайте, как строить здоровые отношения в семье на библейском основании."
 image: /assets/images/God_masterplan_of_marriage.jpg
 videoId: IB3YPf0dp94

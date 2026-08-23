@@ -286,12 +286,15 @@ ol {
 
 /* ---------- Cards Grid ---------- */
 .cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-lg);
 }
 
 .card {
+  flex: 0 1 calc(50% - var(--space-lg) / 2);
+  min-width: 280px;
   background-color: var(--color-white);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
@@ -672,7 +675,12 @@ ol {
   }
 
   .cards-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: 100%;
   }
 
   .video-grid {
@@ -685,10 +693,6 @@ ol {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .video-grid {
     grid-template-columns: repeat(2, 1fr);
   }

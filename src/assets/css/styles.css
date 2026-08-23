@@ -493,6 +493,25 @@ ol {
   color: var(--color-text-muted);
 }
 
+/* ---------- PDF Link ---------- */
+.pdf-link {
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: var(--space-lg);
+  transition: background-color 0.2s ease;
+}
+
+.pdf-link:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 /* ---------- Article List Page ---------- */
 .article-list {
   max-width: 800px;
@@ -614,38 +633,37 @@ ol {
   }
 
   .nav-toggle {
-    display: flex;
+    display: none;
+  }
+
+  .site-header {
+    height: auto;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-xs);
+    padding-top: var(--space-sm);
+    padding-bottom: var(--space-sm);
   }
 
   .site-nav {
-    position: fixed;
-    top: var(--header-height);
-    right: 0;
-    bottom: 0;
-    width: 260px;
-    background-color: var(--color-primary);
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
-    padding: var(--space-lg) var(--space-md);
-    box-shadow: var(--shadow-lg);
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .site-nav.open {
-    transform: translateX(0);
+    flex-basis: 100%;
+    justify-content: center;
   }
 
   .site-nav ul {
     flex-direction: column;
-    gap: var(--space-sm);
+    gap: var(--space-xs);
     width: 100%;
   }
 
   .site-nav a {
     display: block;
-    padding: var(--space-sm);
-    font-size: 1.1rem;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 1rem;
+    text-align: center;
     border-radius: var(--border-radius);
   }
 

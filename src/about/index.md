@@ -1,47 +1,34 @@
 ---
 layout: layouts/base.njk
-title: About Us
-description: Learn about our mission to strengthen Christian families
+title: Про нас
+description: ЦЕЛИ И ЗАДАЧИ Семейного Отдела Американского Объединения
 ---
 
 <section class="page-header">
-  <h1>About Us</h1>
-  <p>Learn about our mission, our values, and our hearts for Christian families.</p>
+  <h1>ЦЕЛИ И ЗАДАЧИ Семейного Отдела Американского Объединения</h1>
 </section>
 
 <section class="container">
   <div class="about-content">
     <article class="about-text">
-      <h2>Our Mission</h2>
-      <p>We are a Christian ministry dedicated to strengthening families through the timeless truth of God's Word. Our heart is to see every home built on a firm foundation of faith, love, and biblical wisdom.</p>
-      
-      <p>We believe that when families thrive, communities flourish. That's why we create articles, videos, and resources that equip parents, spouses, and children to live out their faith in everyday life.</p>
+      <p>Мы — команда пасторов, душепопечителей, объединённых желанием помогать семьям строить отношения на библейском основании. Наше служение включает публикацию статей, видео, личные консультации и другие материалы.</p>
 
-      <h2>What We Believe</h2>
-      <ul>
-        <li>The Bible is the inspired and authoritative Word of God.</li>
-        <li>Jesus Christ is the way, the truth, and the life.</li>
-        <li>The family is God's design for nurturing faith across generations.</li>
-        <li>Every person is created in God's image and has inherent dignity.</li>
-      </ul>
+      <p>Итак, подражайте Богу, как чада возлюбленные, и живите в любви, как и Христос возлюбил нас и предал Себя за нас в приношение и жертву Богу, в благоухание приятное</p>
 
-      <h2>What We Offer</h2>
-      <ul>
-        <li><strong>Articles:</strong> In-depth teachings on marriage, parenting, and Christian living.</li>
-        <li><strong>Videos:</strong> Sermons and conference sessions that bring biblical truth to life.</li>
-        <li><strong>Community:</strong> A place of encouragement and shared growth for families.</li>
-      </ul>
+      <p>Еф.5:1-2</p>
+
+      <p>Семейный отдел в объединении и в церкви играет важную роль в поддержке духовного состояния и взаимоотношений в семьях. Его цели и задачи направлены на укрепление Библейских ценностей в семье.</p>
+
+      <p>«Ты же говори то, что сообразно с здравым учению» (Тит. 2:1).</p>
+
+      <h3>I. Утверждение авторитета Слова Божьего</h3>
+      <p>Слово Божие является основанием для формирования семьи и здоровых отношений в ней.</p>
+
+      <h3>II. Содействие гармонии в семье</h3>
+      <p>Оказание помощи семьям в кризисных ситуациях (конфликты, трудности) на основе Библейских истин.</p>
+
+      <h3>III. Образовательная и просветительная работа</h3>
+      <p>Подготовка и распространение материалов, обучение по вопросам взаимоотношений супругов, воспитания детей, а также наставление молодёжи в создании семьи на основании евангельских принципов.</p>
     </article>
-
-    <div class="about-photos">
-      <figure class="about-photo">
-        <img src="/assets/images/about-placeholder1.svg" alt="A warm family photo" loading="lazy">
-        <figcaption>Our community — families growing together in faith</figcaption>
-      </figure>
-      <figure class="about-photo">
-        <img src="/assets/images/about-placeholder2.svg" alt="A photo of our team" loading="lazy">
-        <figcaption>Our team — serving the next generation</figcaption>
-      </figure>
-    </div>
   </div>
 </section>

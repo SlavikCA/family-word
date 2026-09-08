@@ -13,8 +13,8 @@ description: Статьи для христианских семей
         {% if article.data.category %} · {{ article.data.category }}{% endif %}
       </p>
       <h2 class="article-list-title"><a href="{{ article.url }}">{{ article.data.title }}</a></h2>
-      <p class="article-list-excerpt">{{ article.data.excerpt }}</p>
-      <a href="{{ article.url }}" class="read-more">Read More →</a>
+      <p class="article-list-excerpt">{{ article.data.excerpt | safe }}</p>
+      {% if article.data.readMore %} <a href="{{ article.url }}" class="read-more">Read More →</a> {% endif %}
     </article>
     {% endfor %}
   </div>

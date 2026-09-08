@@ -28,8 +28,8 @@ description: Building strong Christian homes through articles and videos
       <div class="card-content">
         <p class="card-meta">{{ post.data.category }} · {{ post.date | date('MMMM D, YYYY') }}</p>
         <h3 class="card-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-        <p class="card-excerpt">{{ post.data.excerpt }}</p>
-        <a href="{{ post.url }}" class="read-more">Читать →</a>
+        <p class="card-excerpt">{{ post.data.excerpt | safe }}</p>
+        {% if post.data.readMore %}  <a href="{{ post.url }}" class="read-more">Читать →</a> {% endif %}
       </div>
     </article>
     {% endfor %}

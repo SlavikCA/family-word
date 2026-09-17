@@ -182,6 +182,18 @@ ol {
   font-weight: 600;
 }
 
+.site-nav a.nav-telegram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-nav a.nav-telegram svg {
+  height: 1.1rem;
+  width: auto;
+  display: block;
+}
+
 /* ---------- Mobile Nav Toggle ---------- */
 .nav-toggle {
   display: none;
